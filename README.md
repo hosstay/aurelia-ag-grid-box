@@ -1,4 +1,4 @@
-# agGrid Spreadsheet
+# Aurelia agGrid Box
 
 A personal utility for componentizing a box with an ag-grid in it via aurelia.
 
