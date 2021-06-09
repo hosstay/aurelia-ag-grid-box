@@ -1,0 +1,26 @@
+<template>
+  <require from="./gridbox.css"></require>
+  <div id.bind="gridName+'-grid-box'" class.bind="'grid-box' + (loading ? ' dark-background' : '') + (!start ? ' hide-grid-box' : '')">
+    <div id.bind="gridName+'-grid-header'" class="grid-header">
+      <div id.bind="gridName+'-grid-label-left'" class="grid-header-label grid-header-label-left">
+        <p if.bind="counter>-1" id="counter" class="counter">${counter}</p>
+        <select if.bind="isSwitchers" repeat.for="switcher of switchers" class="switcher">
+          <option repeat.for="listItem of switcher.list">${listItem}</option>
+        </select> 
+        <button if.bind="exitButton.position === 'left'" id="gridName+'-exit-btn'" class="grid-btn fa fa-times"></button>
+        <button if.bind="genericButton.position === 'left'" id="gridName+'-generic-btn'" class.bind="genericButton.classListString" click.delegate="genericButton.func()">${genericButton.name}</button>
+      </div>
+      <div id.bind="gridName+'-grid-label-center'" class="grid-header-label grid-header-label-center">
+        ${currentGrid.headerName}
+      </div>
+      <div id.bind="gridName+'-grid-label-right'" class="grid-header-label grid-header-label-right">
+        <button if.bind="exitButton.position === 'right'" id="gridName+'-exit-btn'" class="grid-btn fa fa-times"></button>
+        <button if.bind="genericButton.position === 'right'" id="gridName+'-generic-btn'" class.bind="genericButton.classListString" click.delegate="genericButton.func()">${genericButton.name}</button>
+        <!-- <div if.bind="loadMessage">${loadMessage}</div> -->
+      </div>
+    </div>
+    <div id.bind="gridName+'-grid-box-mount'" class="grid-box-grid-mount">
+      <div id.bind="gridName+'-grid-div'" class="ag-balham grid-div"></div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,142 @@
+.dark-background {
+  opacity: .50;
+}
+.light-background {
+  opacity: 1;
+}
+
+.hide-grid-box {
+  display: none;
+}
+
+.master-grid-box {
+  height: 94vh;
+}
+.grid-box {
+  background-color: white;
+  border-radius: 1.2vh;
+  padding-left: .5vw;
+  padding-right: .5vw;
+  -webkit-box-shadow: 0 0 .4vh .1vh rgba(0,0,0,.1), 0 .3vh 2.4vh rgba(0,0,0,.9);
+  box-shadow: 0 0 .4vh .1vh rgba(0,0,0,.1), 0 .3vh 2.4vh rgba(0,0,0,.9);
+  /* display: block; */
+}
+.grid-header {
+  height: 4vh;
+  width: 100%;
+  margin: 0;
+  margin-top: 0.5vh;
+  padding: 0;
+}
+.grid-header-label {
+  color: #0474c9;
+  font-weight: bold;
+  font-family: Open Sans;
+  font-size: 2vh;
+  display: inline-block;
+  width: 33%;
+  margin-top: 1vh;
+}
+
+.grid-header-label-center {
+  text-align: center;
+}
+.grid-header-label-right {
+  text-align: right;
+}
+
+.grid-footer {
+  text-align: center;
+  font-size: 2em;
+}
+
+.grid-box-grid-mount {
+	display: inline-block;
+	z-index: 3;
+}
+.grid-btn {
+  /* display: contents; */
+  /* position: relative;
+  top: -3.9vh;
+  right: .7vw; */
+  height: 3.0vh;
+  width: 2vw;
+  background-color: #ffffff;
+  color: #a7a9ac;
+  padding: 0vh 0vh 0vh 0vh;
+  border-radius: 0vh;
+  border: none;
+  /* z-index: 99; */
+}
+.grid-btn:hover {
+  color: #333;
+}
+
+.generic-grid-btn {
+  height: 3.0vh;
+  width: 10vw;
+  color: #0474c9;
+}
+.generic-grid-btn:hover {
+  color: #333;
+}
+
+.counter {
+  width: 3vw;
+	font-weight: bold;
+  font-family: Open Sans;
+  text-align: center;
+  font-size: 2.5vh;
+	border: solid;
+  border-width: thin;
+  margin-left: 1vw;
+	padding-left: 1vw;
+  padding-right: 1vw;
+  display: inline-block;
+}
+.load-message-blink {
+  animation: flash linear 1s infinite;
+}
+.switcher {
+  margin-left: 1vw;
+}
+
+.row-green {
+  background-color: #4ee44e !important;
+}
+.row-yellow {
+  background-color: yellow !important;
+}
+.row-blue {
+  background-color: #72bcd4 !important;
+}
+
+/* @keyframes blinker {
+  from {visibility: visible;}
+  to {visibility: hidden;}
+}
+@-webkit-keyframes blinker {
+  from {visibility: visible;}
+  to {visibility: hidden;}
+} */
+@-webkit-keyframes flash {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+  /* 80% { opacity: 1;} 
+  83% { opacity: 0;} 
+  86% { opacity: 1;}  
+  89% { opacity: 0} 
+  92% { opacity: 1;} 
+  95% { opacity: 0;} */
+  
+}
+@keyframes flash {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+  /* 80% { opacity: 1;} 
+  83% { opacity: 0;} 
+  86% { opacity: 1;}  
+  89% { opacity: 0} 
+  92% { opacity: 1;} 
+  95% { opacity: 0;} */
+}

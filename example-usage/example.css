@@ -1,0 +1,42 @@
+#example-test-grid-box {
+  width: 72vw;
+  position: absolute;
+  height: 72vh;
+  top: 6vh;
+  left: 13vw;
+  margin-top: 4.2vh;
+}
+
+#example-test-grid-box-mount {
+  position: relative;
+  top: -2vh;
+  height: 100%;
+  width: 100%;
+}
+
+#example-test-grid-div {
+  height: 94.6%;
+  width: 99.5%;
+  padding-left: 0.5%;
+}
+
+#example-test-grid-label-center, #example-test-grid-label-right {
+  position: relative;
+  top: -0.9vh;
+}
+
+.exit-button {
+  display: inline-block;
+  position: absolute;
+  top: 0.4vh;
+  right: 0.5vw;
+  height: 3vh;
+  width: 2vw;
+  background-color: #ffffff;
+  color: #a7a9ac;
+  padding: 0vh 0vh 0vh 0vh;
+  border-radius: 0vh;
+  border: none;
+  z-index: 3;
+  font-size: 0.7vw;
+}
